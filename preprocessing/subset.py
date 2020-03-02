@@ -1,11 +1,11 @@
-# Pre-processing Movie Ratings Data
+    # Pre-processing Movie Ratings Data
 
 import pandas as pd
 import numpy as np
 from collections import Counter
 
 
-class PreProcess:   
+class PreProcess:
 
     def __init__(self, users, movies):
         # Subset count for #movies (m) and #users (n)
