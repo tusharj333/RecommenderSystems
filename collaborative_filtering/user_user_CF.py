@@ -13,7 +13,7 @@ with open("./../data/usermovie2rating_test.json", 'rb') as f:
     usermovie2rating_test = pickle.load(f)
 
 N = max(user2movie.keys()) + 1  # Number of Users
-M = max(max(movie2user.keys()), max(usermovie2rating.keys())[1]) + 1  # Number of Users
+M = max(max(movie2user.keys()), max(usermovie2rating.keys())[1]) + 1  # Number of Movies
 
 k = 25  # Number of k nearest users
 limit = 5  # least number of common movies between users to consider
