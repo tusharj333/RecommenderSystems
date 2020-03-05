@@ -39,10 +39,12 @@ df = pd.read_csv("./../data/small_rating.csv")
 df_train, df_test = split_train_test(df, 0.8)
 df_train.apply(user_movie_rating_dict_train, axis=1)
 df_test.apply(user_movie_rating_dict_test, axis=1)
-save_json(user2movie, "user2movie")
-save_json(movie2user, "movie2user")
-save_json(usermovie2rating, "usermovie2rating")
-save_json(usermovie2rating_test. "usermovie2rating_test")
+
+# saving to json
+save_json(user2movie, "./../data/user2movie")
+save_json(movie2user, "./../data/movie2user")
+save_json(usermovie2rating, "./../data/usermovie2rating")
+save_json(usermovie2rating_test. "./../data/usermovie2rating_test")
 
 
 
